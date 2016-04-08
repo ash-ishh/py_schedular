@@ -7,7 +7,7 @@ import sys
 if not os.path.exists("c:\py_schedular"):
         os.makedirs("c:\py_schedular")
         todo = []
-        file_obj = ("c:\py_schedular\data.txt","wb")
+        file_obj = open("c:\py_schedular\data.txt","wb")
         pickle.dump(todo,file_obj)
         file_obj.close()
 
