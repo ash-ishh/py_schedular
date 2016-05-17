@@ -7,12 +7,12 @@ import sys
 if not os.path.exists("c:\py_schedular"):
         os.makedirs("c:\py_schedular")
         todo = []
-        file_obj = open("c:\py_schedular\data.txt","wb")
+        file_obj = open("c:\\py_schedular\\data.txt","wb")
         pickle.dump(todo,file_obj)
         file_obj.close()
 
-def open_file(x):
-    return open("c:\py_schedular\data.txt",x)
+def open_file(mode):
+    return open("c:\py_schedular\data.txt",mode)
 
 def show_tasks():
         file_obj = open_file('rb')
